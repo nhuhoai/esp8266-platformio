@@ -11,4 +11,4 @@ jobs:
     - stage: build
       script: platformio run
     - stage: test
-      script: platformio test
+      script: platformio test --board=esp12e
