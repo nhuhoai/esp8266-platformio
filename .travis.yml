@@ -6,5 +6,9 @@ python:
 install:
   - pip install -U platformio
 
-script:
-  - platformio run
+jobs:
+  include:
+    - stage: build
+      script: platformio run
+    - stage: test
+      script: platformio test
