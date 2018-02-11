@@ -11,4 +11,4 @@ jobs:
     - stage: build
       script: platformio run
     - stage: test
-      script: platformio ci --board=esp12e
+      script: platformio remote test -e esp12e
