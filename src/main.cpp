@@ -6,6 +6,8 @@
  *  @brief    Blinking built-in led
  */
 
+#ifndef UNIT_TEST
+
 #include <Arduino.h>
 
 void setup() {
@@ -18,3 +20,5 @@ void loop() {
   digitalWrite(LED_BUILTIN, HIGH);
   delay(1000);
 }
+
+#endif
